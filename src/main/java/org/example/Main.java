@@ -16,5 +16,30 @@ public class Main {
         // Почему так?
         outpatientList out_patient_list = new outpatientList(patientsList);
         System.out.println(out_patient_list.getPsyPatient(36));
+//        System.out.println("=human=");
+//        Human human = new Human("Shmidt");
+//        System.out.println(human.getName());
+//        human.setMakeOrder(true);
+//        System.out.println("isTakeOrder: " + human.isTakeOrder);
+//        System.out.println("isMakeOrder: " + human.isMakeOrder);
+//        human.setTakeOrder(true);
+//        System.out.println("isTakeOrder: " + human.isTakeOrder);
+//        System.out.println("isMakeOrder: " + human.isMakeOrder);
+//        System.out.println(human);
+        System.out.println("=MARKET=");
+
+ //       List<Actor> actors = new ArrayList<>();
+//        actors.add(0, new Human("Paul"));
+//        actors.add(1, new Human("Leo"));
+//        actors.add(2, new Human("Zhick"));
+//        actors.add(3, new Human("Cat"));
+
+        Market market = new Market();
+        Human human1 = new Human("Ivan");
+        Human human2 = new Human("Vladimir");
+        market.acceptToMarket(human1);
+        market.acceptToMarket(human2);
+        market.update();
+
     }
 }
